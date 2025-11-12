@@ -32,6 +32,7 @@ jobs:
       issues: write
     if: ${{ failure() }}
     steps:
+      - uses: actions/checkout@v4      
       - name: Create issue for failed workflow
         run: |
           gh issue create --title "Workflow failed: ${{ github.workflow }}" \
