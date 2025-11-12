@@ -1,4 +1,4 @@
-FROM python:3.11-slims
+FROM python:3.11-slim
 
 LABEL org.opencontainers.image.source="https://github.com/beshmo/hello-python"
 
